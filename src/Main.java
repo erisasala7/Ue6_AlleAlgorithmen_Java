@@ -11,7 +11,6 @@ public class Main {
         int arraysize = (int) cacheSize / Integer.SIZE;
         int biggersize = (int) arraysize * 2;
         int[] array_innerhalb_cache = new int[arraysize];
-
         int[] array_ausserhalb_cache = new int[biggersize];
 
 
