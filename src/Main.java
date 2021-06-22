@@ -139,61 +139,6 @@ public class Main {
         System.out.println(ANSI_BLUE + "Elapsed Time in milliseconds: " + (timerend - timerstart) + ANSI_RESET);
         System.out.println(" ");
 
-        System.out.println(ANSI_BLUE + "Count Sort Algorithm\n" + ANSI_RESET);
-        System.out.println(ANSI_BLUE + "Count Sort: Randomly filled array with size:  " + arraysize + ANSI_RESET);
-        Quick_Sorting.clearCache(cacheSize);
-        Count_Sorting.fillUpArrayRng(array_innerhalb_cache);
-        System.out.println(ANSI_BLUE + "Start sorting  " +  ANSI_RESET);
-        //Quick_Sorting.printArray(array_innerhalb_cache, arraysize);
-        timerstart = System.currentTimeMillis();
-        Count_Sorting.countSort(array_innerhalb_cache);
-        timerend = System.currentTimeMillis();
-
-       // Quick_Sorting.printArray(array_innerhalb_cache, arraysize);
-        System.out.println(ANSI_BLUE + "Elapsed Time in milliseconds: " + (timerend - timerstart) + ANSI_RESET);
-
-        System.out.println(" ");
-
-        //selection sort - regular array size - best case run
-        System.out.println(ANSI_BLUE + "Count Sort: Best case run with array of size: " + arraysize + ANSI_RESET);
-        Quick_Sorting.clearCache(cacheSize);
-        Count_Sorting.fillUpArrayIncreasing(array_innerhalb_cache);
-        System.out.println(ANSI_BLUE + "Start sorting  " + ANSI_RESET);
-        //Quick_Sorting.printArray(array_innerhalb_cache, arraysize);
-        timerstart = System.currentTimeMillis();
-        Count_Sorting.countSort(array_innerhalb_cache);
-        timerend = System.currentTimeMillis();
-
-        //Quick_Sorting.printArray(array_innerhalb_cache, arraysize);
-        System.out.println(ANSI_BLUE + "Elapsed Time in milliseconds: " + (timerend - timerstart) + ANSI_RESET);
-        System.out.println(" ");
-
-        System.out.println(ANSI_BLUE + "Count Sort Algorithm\n" + ANSI_RESET);
-        System.out.println(ANSI_BLUE + "Count Sort: Randomly filled array with size bigger than  cache size:  " + biggersize + ANSI_RESET);
-        Quick_Sorting.clearCache(cacheSize);
-        Count_Sorting.fillUpArrayRng(array_ausserhalb_cache);
-        System.out.println(ANSI_BLUE + "Start sorting  " + ANSI_RESET);
-        //Quick_Sorting.printArray(array_ausserhalb_cache, biggersize);
-        timerstart = System.currentTimeMillis();
-        Count_Sorting.countSort(array_ausserhalb_cache);
-        timerend = System.currentTimeMillis();
-
-        //Quick_Sorting.printArray(array_ausserhalb_cache, biggersize);
-        System.out.println(ANSI_BLUE + "Elapsed Time in milliseconds: " + (timerend - timerstart) + ANSI_RESET);
-        System.out.println(" ");
-
-        //selection sort - regular array size - best case run
-        System.out.println(ANSI_BLUE + "Count Sort: Best case run with array of size bigger than  cache size: " + biggersize + ANSI_RESET);
-        Quick_Sorting.clearCache(cacheSize);
-        Count_Sorting.fillUpArrayIncreasing(array_ausserhalb_cache);
-        System.out.println(ANSI_BLUE + "Start sorting  " + ANSI_RESET);
-        //Quick_Sorting.printArray(array_ausserhalb_cache, biggersize);
-        timerstart = System.currentTimeMillis();
-        Count_Sorting.countSort(array_ausserhalb_cache);
-        timerend = System.currentTimeMillis();
-        //Quick_Sorting.printArray(array_ausserhalb_cache, biggersize);
-        System.out.println(ANSI_BLUE + "Elapsed Time in milliseconds: " + (timerend - timerstart) + ANSI_RESET);
-        System.out.println(" ");
 
     }
 }
